@@ -56,7 +56,7 @@ class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         Log.e("TAG", "onPostExecute: " + result);
-        Toast.makeText(context, "from GCE :" + result, Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, "from GCE :" + result, Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(context, MainActivityAndroidLib.class);
         i.putExtra("joke", result);

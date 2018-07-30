@@ -8,10 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.amrhal.jokeandroidlib.MainActivityAndroidLib;
-import com.amrhal.jokesjlib.Jokes;
-
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -52,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 //        Intent i = new Intent(this,MainActivityAndroidLib.class);
 //        i.putExtra("joke",jokeFromJokesJavaLib);
 //        startActivity(i);
-        new EndpointsAsyncTask(this).execute();
+        new EndpointsAsyncTask(getApplicationContext()).execute();
     }
 
 
